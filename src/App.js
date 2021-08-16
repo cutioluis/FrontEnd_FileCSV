@@ -6,6 +6,7 @@ import TableCoins from "./components/TableCoins";
 
 function App() {
   const [coins, setCoins] = useState([]);
+  const [search, setSearch] = useState("");
 
   const getData = async () => {
     const res = await axios.get(
@@ -21,7 +22,13 @@ function App() {
   return (
     <div className="container">
       <div className="row">
-        <TableCoins coins={coins} />
+        <input
+          className=" form-control bg-dark text-center border-0 mt-4 text-light "
+          type="text"
+          placeholder="Search a coins"
+          onChange={e => setSearch(e.target.value)}
+        />
+        <TableCoins coins={coins} search={search} />
       </div>
     </div>
   );
