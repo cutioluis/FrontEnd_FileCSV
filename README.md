@@ -14,6 +14,10 @@ npm install
 npm run start
 ```
 
+## Tools 
+- React
+- Bootstrap
+
 ## Author
 
 👤 **David Cutiopala**
