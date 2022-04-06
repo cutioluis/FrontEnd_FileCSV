@@ -1,16 +1,16 @@
 import React from "react";
 
-const FileRowContent = ({ file, index }) => {
+const FileRowHex = ({ file, index}) => {
   console.log(file);
   return (
     <>
       {file.lines.map((f, index) => (
         <tr>
-          <td>{f.text}</td>
+          <td>{f.hex}</td>
         </tr>
       ))}
     </>
   );
 };
 
-export default FileRowContent;
+export default FileRowHex;
