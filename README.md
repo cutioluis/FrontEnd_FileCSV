@@ -18,8 +18,8 @@ npm run start
 - React
 - Bootstrap
 
+
 ## Author
 
 👤 **David Cutiopala**
 
-## Show your support
